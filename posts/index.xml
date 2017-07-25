@@ -1,81 +1,81 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on My New Hugo Site</title>
-    <link>http://example.org/posts/</link>
-    <description>Recent content in Posts on My New Hugo Site</description>
+    <title>Posts on Binary Wings</title>
+    <link>https://snd96.github.io/Blog/posts/</link>
+    <description>Recent content in Posts on Binary Wings</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 24 Jul 2017 00:18:52 +0530</lastBuildDate>
     
-	<atom:link href="http://example.org/posts/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://snd96.github.io/Blog/posts/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Pocketsphinx.js - Week 8</title>
-      <link>http://example.org/posts/week8/</link>
+      <link>https://snd96.github.io/Blog/posts/week8/</link>
       <pubDate>Mon, 24 Jul 2017 00:18:52 +0530</pubDate>
       
-      <guid>http://example.org/posts/week8/</guid>
+      <guid>https://snd96.github.io/Blog/posts/week8/</guid>
       <description>From the previous week my main aim was to implement a basic version of the recognizer from syl22-00/pocketsphinx.js. I have built a previous version of it earlier which I used as a basic from SND96/pocketsphinx-scores. I originally built this to to get the alignment scores for words in the phrase &amp;ldquo;What&amp;rsquo;s your name?&amp;rdquo;. I won&amp;rsquo;t need this for now so I removed that completely but may include it at a later time when the application is more stable.</description>
     </item>
     
     <item>
       <title>Integrating Pocketsphinx.js - Week 7</title>
-      <link>http://example.org/posts/week7/</link>
+      <link>https://snd96.github.io/Blog/posts/week7/</link>
       <pubDate>Wed, 19 Jul 2017 15:18:28 +0530</pubDate>
       
-      <guid>http://example.org/posts/week7/</guid>
+      <guid>https://snd96.github.io/Blog/posts/week7/</guid>
       <description>This entire week has been devoted to adding Pocketsphinx.js recognizer to the application. The first thing we had to decide was whether to put a separate recognizer for the entire application.
 Most of this week has been spent trying to implement the application that I made in March into the Twine HTML files. This hasn&amp;rsquo;t working and has been incredibly buggy resulting in the microphone not working at all and has delayed my schedule for the week.</description>
     </item>
     
     <item>
       <title>Flask and making parsers - Week 6</title>
-      <link>http://example.org/posts/week6/</link>
+      <link>https://snd96.github.io/Blog/posts/week6/</link>
       <pubDate>Sat, 15 Jul 2017 00:18:42 +0530</pubDate>
       
-      <guid>http://example.org/posts/week6/</guid>
+      <guid>https://snd96.github.io/Blog/posts/week6/</guid>
       <description>Using Flask has been a bit slow as I&amp;rsquo;ve had to learn an entirely new framework. Flask applications work on connecting different HTML pages through code which acts as a wrapper.
 The first thing that I had to do was make a parser for the which separates all the Twine pages into HTML files. Separating the files was important as it would make the routing between pages much more streamlined using the Flask application.</description>
     </item>
     
     <item>
       <title>Using Python Flask - Week 4&amp;5</title>
-      <link>http://example.org/posts/week4-5/</link>
+      <link>https://snd96.github.io/Blog/posts/week4-5/</link>
       <pubDate>Sat, 08 Jul 2017 18:27:38 +0530</pubDate>
       
-      <guid>http://example.org/posts/week4-5/</guid>
+      <guid>https://snd96.github.io/Blog/posts/week4-5/</guid>
       <description>I&amp;rsquo;ve decided to combine these 2 weeks as it seems to make more sense as not much was accomplished during week 4.
 Right now I have to make a flask application which wraps around the Twine Stories that I&amp;rsquo;ve already used. This is the first step towards making the final Computer Aided Learning Interface. Right now the Twine stories are purely navigated through by just clicking on the correct option. The whole point of this project is to be able to do this by the means of speech recognition and to give feedback on this.</description>
     </item>
     
     <item>
       <title>Speech Processing - Week 3</title>
-      <link>http://example.org/posts/week3/</link>
+      <link>https://snd96.github.io/Blog/posts/week3/</link>
       <pubDate>Tue, 27 Jun 2017 11:28:37 +0530</pubDate>
       
-      <guid>http://example.org/posts/week3/</guid>
+      <guid>https://snd96.github.io/Blog/posts/week3/</guid>
       <description>This third week has been devoted mainly to processing the necessary prompt files which will be used later for the the education system. There were two different types of recordings. One which had purely a single word. These proved challenging in the beginning but we soon managed to process the files using the correct commands in sphinx.
 The first step was converting all the files into .wav(16,000 samples per second, 16 signed bits per sample, little endian) format from .</description>
     </item>
     
     <item>
       <title>Introduction - Week 1</title>
-      <link>http://example.org/posts/my-first-post/</link>
+      <link>https://snd96.github.io/Blog/posts/my-first-post/</link>
       <pubDate>Tue, 20 Jun 2017 20:26:48 +0530</pubDate>
       
-      <guid>http://example.org/posts/my-first-post/</guid>
+      <guid>https://snd96.github.io/Blog/posts/my-first-post/</guid>
       <description>Hi everyone! My name’s Sahith Dambekodi and I’m a second year undergrad student at BITS Pilani K.K. Birla Goa Campus. I’m pursuing a major in Electrical and Electronics engineering.
 My initial foray into open source began mainly with general purpose machine learning libraries like scikit-learn and tensorflow. I had heard about Google Summer Of Code through my peers and I was intrigued by the possibilities of coding an entire summer about something I was genuinely interested in.</description>
     </item>
     
     <item>
       <title>Using Twine - Week 2</title>
-      <link>http://example.org/posts/twine-tutorial/</link>
+      <link>https://snd96.github.io/Blog/posts/twine-tutorial/</link>
       <pubDate>Sun, 18 Jun 2017 00:21:38 +0530</pubDate>
       
-      <guid>http://example.org/posts/twine-tutorial/</guid>
+      <guid>https://snd96.github.io/Blog/posts/twine-tutorial/</guid>
       <description>Twee/Twine is an open source software that is used to make branching stories which means that there will be multiple possible paths through any story. Twine stories are an intuitive and easy way to make assignments and we thought it would be a good idea to use that to supplement the voice recognition software.
 Twine Stories create stories with multiple possible branching scenarios through them. These stories can be used as an engaging tutorial to help students with new technologies.</description>
     </item>

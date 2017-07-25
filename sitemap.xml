@@ -3,59 +3,59 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>http://example.org/posts/week8/</loc>
+    <loc>https://snd96.github.io/Blog/posts/week8/</loc>
     <lastmod>2017-07-24T00:18:52+05:30</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/posts/week7/</loc>
+    <loc>https://snd96.github.io/Blog/posts/week7/</loc>
     <lastmod>2017-07-19T15:18:28+05:30</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/posts/week6/</loc>
+    <loc>https://snd96.github.io/Blog/posts/week6/</loc>
     <lastmod>2017-07-15T00:18:42+05:30</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/posts/week4-5/</loc>
+    <loc>https://snd96.github.io/Blog/posts/week4-5/</loc>
     <lastmod>2017-07-08T18:27:38+05:30</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/posts/week3/</loc>
+    <loc>https://snd96.github.io/Blog/posts/week3/</loc>
     <lastmod>2017-06-27T11:28:37+05:30</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/posts/my-first-post/</loc>
+    <loc>https://snd96.github.io/Blog/posts/my-first-post/</loc>
     <lastmod>2017-06-20T20:26:48+05:30</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/posts/twine-tutorial/</loc>
+    <loc>https://snd96.github.io/Blog/posts/twine-tutorial/</loc>
     <lastmod>2017-06-18T00:21:38+05:30</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/categories/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://example.org/</loc>
+    <loc>https://snd96.github.io/Blog/</loc>
     <lastmod>2017-07-24T00:18:52+05:30</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://example.org/posts/</loc>
+    <loc>https://snd96.github.io/Blog/categories/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://snd96.github.io/Blog/posts/</loc>
     <lastmod>2017-07-24T00:18:52+05:30</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://example.org/tags/</loc>
+    <loc>https://snd96.github.io/Blog/tags/</loc>
     <priority>0</priority>
   </url>
   
