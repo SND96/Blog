@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+     
+    <title>My New Hugo Site  | Integrating Pocketsphinx.js - Week 7</title>
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+     <meta name="generator" content="Hugo 0.25.1" />
+      
+      
+        <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+      
+
+     <link href='http://example.org/dist/main.css' rel='stylesheet' type="text/css" />
+
+     
+
+      <meta property="og:title" content="Integrating Pocketsphinx.js - Week 7" />
+<meta property="og:description" content="This entire week has been devoted to adding Pocketsphinx.js recognizer to the application. The first thing we had to decide was whether to put a separate recognizer for the entire application.
+Most of this week has been spent trying to implement the application that I made in March into the Twine HTML files. This hasn&rsquo;t working and has been incredibly buggy resulting in the microphone not working at all and has delayed my schedule for the week." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://example.org/posts/week7/" />
+
+
+
+<meta property="article:published_time" content="2017-07-19T15:18:28&#43;05:30"/>
+<meta property="article:modified_time" content="2017-07-19T15:18:28&#43;05:30"/>
+
+
+
+
+
+
+
+
+
+
+
+<meta itemprop="name" content="Integrating Pocketsphinx.js - Week 7">
+<meta itemprop="description" content="This entire week has been devoted to adding Pocketsphinx.js recognizer to the application. The first thing we had to decide was whether to put a separate recognizer for the entire application.
+Most of this week has been spent trying to implement the application that I made in March into the Twine HTML files. This hasn&rsquo;t working and has been incredibly buggy resulting in the microphone not working at all and has delayed my schedule for the week.">
+
+
+<meta itemprop="dateModified" content="2017-07-19T15:18:28&#43;05:30" />
+<meta itemprop="wordCount" content="138">
+
+
+
+<meta itemprop="keywords" content="" />
+
+
+  <meta name="twitter:card" content="summary"/>
+
+
+
+<meta name="twitter:text:title" content="Integrating Pocketsphinx.js - Week 7"/>
+<meta name="twitter:title" content="Integrating Pocketsphinx.js - Week 7"/>
+<meta name="twitter:description" content="This entire week has been devoted to adding Pocketsphinx.js recognizer to the application. The first thing we had to decide was whether to put a separate recognizer for the entire application.
+Most of this week has been spent trying to implement the application that I made in March into the Twine HTML files. This hasn&rsquo;t working and has been incredibly buggy resulting in the microphone not working at all and has delayed my schedule for the week."/>
+
+
+  </head>
+
+  <body class="ma0 avenir bg-near-white">
+
+    
+
+  <header>
+    <div class="bg-black">
+      <nav class="pv3 ph3 ph4-ns" role="navigation">
+  <div class="flex-l justify-between items-center center">
+    <a href="http://example.org/" class="f3 fw2 hover-white no-underline white-90 dib">
+      My New Hugo Site
+    </a>
+    <div class="flex-l items-center">
+      
+      
+
+
+
+
+
+
+    </div>
+  </div>
+</nav>
+
+    </div>
+  </header>
+
+
+    <main class="pb7" role="main">
+      
+  <div class="flex-l mt2 mw8 center">
+    <article class="center cf pv5 ph3 ph4-ns mw7">
+      <header>
+        <p class="f6 b helvetica tracked">
+          POSTS
+        </p>
+        <h1 class="f1">
+          Integrating Pocketsphinx.js - Week 7
+        </h1>
+      </header>
+      <div class="nested-copy-line-height lh-copy f4 nested-links nested-img mid-gray">
+        <p>This entire week has been devoted to adding Pocketsphinx.js recognizer to the application. The first thing we had to decide was whether to put a separate recognizer for the entire application.</p>
+
+<p>Most of this week has been spent trying to implement the application that I made in March into the Twine HTML files. This hasn&rsquo;t working and has been incredibly buggy resulting in the microphone not working at all and has delayed my schedule for the week. The way Flask handles such features might be slightly different form pure HTML/JavaScript files so I have been trying to implement my recognizer in pieces. I&rsquo;ve stripped away most of the styling and only left the record button along with the replay and evaluate button. I&rsquo;m hoping that building it again from the ground up will let me find the problem.</p>
+
+      </div>
+    </article>
+    <aside class="ph3 mt2 mt6-ns">
+      
+
+
+
+
+
+
+
+  <div class="bg-light-gray pa3">
+    <ul>
+      <li class="list b mb3">
+        6 More Posts
+      </li>
+      
+        <li class="list f5 w-100 hover-bg-white nl1">
+          
+          <a href="/posts/week8/" class="link ph2 pv2 db black">
+            Pocketsphinx.js - Week 8
+          </a>
+        </li>
+      
+        <li class="list f5 w-100 hover-bg-white nl1">
+          
+          <a href="/posts/week7/" class="link ph2 pv2 db black o-50">
+            Integrating Pocketsphinx.js - Week 7
+          </a>
+        </li>
+      
+        <li class="list f5 w-100 hover-bg-white nl1">
+          
+          <a href="/posts/week6/" class="link ph2 pv2 db black">
+            Flask and making parsers - Week 6
+          </a>
+        </li>
+      
+        <li class="list f5 w-100 hover-bg-white nl1">
+          
+          <a href="/posts/week4-5/" class="link ph2 pv2 db black">
+            Using Python Flask - Week 4&amp;5
+          </a>
+        </li>
+      
+        <li class="list f5 w-100 hover-bg-white nl1">
+          
+          <a href="/posts/week3/" class="link ph2 pv2 db black">
+            Speech Processing - Week 3
+          </a>
+        </li>
+      
+        <li class="list f5 w-100 hover-bg-white nl1">
+          
+          <a href="/posts/my-first-post/" class="link ph2 pv2 db black">
+            Introduction - Week 1
+          </a>
+        </li>
+      
+        <li class="list f5 w-100 hover-bg-white nl1">
+          
+          <a href="/posts/twine-tutorial/" class="link ph2 pv2 db black">
+            Using Twine - Week 2
+          </a>
+        </li>
+      
+    </ul>
+  </div>
+
+
+    </aside>
+  </div>
+
+    </main>
+    <footer class="bg-near-black bottom-0 w-100 pa3" role="contentinfo">
+  <div class="flex justify-between">
+  <a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="http://example.org/" >
+    &copy; 2017 My New Hugo Site
+  </a>
+  
+
+
+
+
+
+
+  </div>
+</footer>
+
+    <script src="http://example.org/dist/app.bundle.js" async></script>
+
+  </body>
+</html>
