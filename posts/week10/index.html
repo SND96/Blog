@@ -20,14 +20,15 @@
      
 
       <meta property="og:title" content="Pocketsphinx.js - Week 8" />
-<meta property="og:description" content="From the previous week my main aim was to implement a basic version of the recognizer from syl22-00/pocketsphinx.js. I have built a previous version of it earlier which I used as a basic from SND96/pocketsphinx-scores. I originally built this to to get the alignment scores for words in the phrase &ldquo;What&rsquo;s your name?&rdquo;. I won&rsquo;t need this for now so I removed that completely but may include it at a later time when the application is more stable." />
+<meta property="og:description" content="This week was spent mostly on loading the pronunciation phonemes for each word in every option into Pocketsphinx.js. The first step was getting all the phonemes which was already accomplished earlier and made into jsgf files. Instead of using the jsgf files, the pronunciations will be loaded directly into the html page in two steps.
+The first step will be to make an entire dictionary for all the word present on that particular page." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://snd96.github.io/Sahith-Blog/posts/week8/" />
+<meta property="og:url" content="https://snd96.github.io/Sahith-Blog/posts/week10/" />
 
 
 
-<meta property="article:published_time" content="2017-07-24T00:18:52&#43;05:30"/>
-<meta property="article:modified_time" content="2017-07-24T00:18:52&#43;05:30"/>
+<meta property="article:published_time" content="2017-08-03T13:53:30&#43;05:30"/>
+<meta property="article:modified_time" content="2017-08-03T13:53:30&#43;05:30"/>
 
 
 
@@ -40,11 +41,12 @@
 
 
 <meta itemprop="name" content="Pocketsphinx.js - Week 8">
-<meta itemprop="description" content="From the previous week my main aim was to implement a basic version of the recognizer from syl22-00/pocketsphinx.js. I have built a previous version of it earlier which I used as a basic from SND96/pocketsphinx-scores. I originally built this to to get the alignment scores for words in the phrase &ldquo;What&rsquo;s your name?&rdquo;. I won&rsquo;t need this for now so I removed that completely but may include it at a later time when the application is more stable.">
+<meta itemprop="description" content="This week was spent mostly on loading the pronunciation phonemes for each word in every option into Pocketsphinx.js. The first step was getting all the phonemes which was already accomplished earlier and made into jsgf files. Instead of using the jsgf files, the pronunciations will be loaded directly into the html page in two steps.
+The first step will be to make an entire dictionary for all the word present on that particular page.">
 
 
-<meta itemprop="dateModified" content="2017-07-24T00:18:52&#43;05:30" />
-<meta itemprop="wordCount" content="248">
+<meta itemprop="dateModified" content="2017-08-03T13:53:30&#43;05:30" />
+<meta itemprop="wordCount" content="266">
 
 
 
@@ -57,7 +59,8 @@
 
 <meta name="twitter:text:title" content="Pocketsphinx.js - Week 8"/>
 <meta name="twitter:title" content="Pocketsphinx.js - Week 8"/>
-<meta name="twitter:description" content="From the previous week my main aim was to implement a basic version of the recognizer from syl22-00/pocketsphinx.js. I have built a previous version of it earlier which I used as a basic from SND96/pocketsphinx-scores. I originally built this to to get the alignment scores for words in the phrase &ldquo;What&rsquo;s your name?&rdquo;. I won&rsquo;t need this for now so I removed that completely but may include it at a later time when the application is more stable."/>
+<meta name="twitter:description" content="This week was spent mostly on loading the pronunciation phonemes for each word in every option into Pocketsphinx.js. The first step was getting all the phonemes which was already accomplished earlier and made into jsgf files. Instead of using the jsgf files, the pronunciations will be loaded directly into the html page in two steps.
+The first step will be to make an entire dictionary for all the word present on that particular page."/>
 
 
   </head>
@@ -103,9 +106,13 @@
         </h1>
       </header>
       <div class="nested-copy-line-height lh-copy f4 nested-links nested-img mid-gray">
-        <p>From the previous week my main aim was to implement a basic version of the recognizer from <a href="https://github.com/syl22-00/pocketsphinx.js">syl22-00/pocketsphinx.js</a>. I have built a previous version of it earlier which I used as a basic from <a href="https://github.com/SND96/pocketsphinx-scores">SND96/pocketsphinx-scores</a>. I originally built this to to get the alignment scores for words in the phrase &ldquo;What&rsquo;s your name?&rdquo;. I won&rsquo;t need this for now so I removed that completely but may include it at a later time when the application is more stable.</p>
+        <p>This week was spent mostly on loading the pronunciation phonemes for each word in every option into Pocketsphinx.js. The first step was getting all the phonemes which was already accomplished earlier and made into jsgf files. Instead of using the jsgf files, the pronunciations will be loaded directly into the html page in two steps.</p>
 
-<p>The features that I did add to the original Pocketsphinx.js application were a playback system which needed the use of <a href="https://github.com/SND96/pocketsphinx-scores">Recorder.js</a>. This playback system will be necessary if the user of the application wishes to hear his pronunciation so that he can correct his mistakes. There is only one Pocketsphinx.js recognizer which will record the user&rsquo;s response and will then take them to the next page in the Twine story based on the option which he has selected. As a placeholder for the responses the user just has to say either &ldquo;One&rdquo;,&ldquo;Two&rdquo; or &ldquo;Three&rdquo; corresponding to the option he wants to select. The user&rsquo;s response will be recorded using Recorder.js that I had mentioned earlier. I&rsquo;m going to be using this while I debug the rest of the system. Once this is done I will replace the generic option responses with the specific responses for each node in the Twine story. The JSGF files for these responses have already been created so they have to only be loaded into Pocketsphinx.js</p>
+<p>The first step will be to make an entire dictionary for all the word present on that particular page. For example for the sentence &ldquo;Change the word recently&rdquo;, the word dictionary will be [&ldquo;change&rdquo;, &ldquo;CH EY N JH&rdquo;], [&ldquo;the&rdquo;, &ldquo;DH AH&rdquo;], [&ldquo;word&rdquo;, &ldquo;W ER D&rdquo;], [&ldquo;recently&rdquo;, &ldquo;R IY S AH N T L IY&rdquo;]. This is done for all the options and then appended to an entire list.</p>
+
+<p>The second step will be to tell Pocketsphinx.js when to expect each word in the sentence, i.e. which order the words will be appearing in. Using the same sentence as above the format in which it will have to be loaded is {from: 0, to:1, word:&ldquo;change&rdquo;},{from: 1, to:2, word:&ldquo;the&rdquo;},{from: 1, to:2, word:&ldquo;the&rdquo;},{from: 2, to:3, word:&ldquo;word&rdquo;},{from: 3, to:4, word:&ldquo;recently&rdquo;}.</p>
+
+<p>The code for these need to be written into each html page along with the Pocketsphinx.js recognizer. For this I wrote a python parser which automatically writes the code into each html file with only a only a few lines of difference between each page. These lines include the options specific to each page and the pronunciations for each of these options. As of right now the recognizer can sometimes be inaccurate resulting in none of the options being selected which needs to be remedied.</p>
 
       </div>
     </article>
@@ -126,14 +133,14 @@
       
         <li class="list f5 w-100 hover-bg-white nl1">
           
-          <a href="/Sahith-Blog/posts/week10/" class="link ph2 pv2 db black">
+          <a href="/Sahith-Blog/posts/week10/" class="link ph2 pv2 db black o-50">
             Pocketsphinx.js - Week 8
           </a>
         </li>
       
         <li class="list f5 w-100 hover-bg-white nl1">
           
-          <a href="/Sahith-Blog/posts/week8/" class="link ph2 pv2 db black o-50">
+          <a href="/Sahith-Blog/posts/week8/" class="link ph2 pv2 db black">
             Pocketsphinx.js - Week 8
           </a>
         </li>

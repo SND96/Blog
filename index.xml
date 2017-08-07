@@ -6,10 +6,20 @@
     <description>Recent content on Binary Wings</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 24 Jul 2017 00:18:52 +0530</lastBuildDate>
+    <lastBuildDate>Thu, 03 Aug 2017 13:53:30 +0530</lastBuildDate>
     
 	<atom:link href="https://snd96.github.io/Sahith-Blog/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Pocketsphinx.js - Week 8</title>
+      <link>https://snd96.github.io/Sahith-Blog/posts/week10/</link>
+      <pubDate>Thu, 03 Aug 2017 13:53:30 +0530</pubDate>
+      
+      <guid>https://snd96.github.io/Sahith-Blog/posts/week10/</guid>
+      <description>This week was spent mostly on loading the pronunciation phonemes for each word in every option into Pocketsphinx.js. The first step was getting all the phonemes which was already accomplished earlier and made into jsgf files. Instead of using the jsgf files, the pronunciations will be loaded directly into the html page in two steps.
+The first step will be to make an entire dictionary for all the word present on that particular page.</description>
+    </item>
     
     <item>
       <title>Pocketsphinx.js - Week 8</title>
