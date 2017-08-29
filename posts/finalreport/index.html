@@ -21,7 +21,8 @@
 
       <meta property="og:title" content="Final Report" />
 <meta property="og:description" content="The final work period is done and the application is up and running at https://snd96.pythonanywhere.com/. The github repository for my work can be found here: https://github.com/SND96/twine-stories.
-These are the tasks that the application can so far perform. * Parse through an entire Twine story and then extract the relevant data like questions and choice statements. The entire story can then be navigated using Flask. * Generate the phonemes for each choice statement and then loading it into Pocketsphinx." />
+These are the tasks that the application can so far perform. * Parse through an entire Twine story and then extract the relevant data like questions and choice statements. The entire story can then be navigated using Flask.
+ Generate the phonemes for each choice statement and then loading it into Pocketsphinx." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://snd96.github.io/Sahith-Blog/posts/finalreport/" />
 
@@ -42,11 +43,12 @@ These are the tasks that the application can so far perform. * Parse through an 
 
 <meta itemprop="name" content="Final Report">
 <meta itemprop="description" content="The final work period is done and the application is up and running at https://snd96.pythonanywhere.com/. The github repository for my work can be found here: https://github.com/SND96/twine-stories.
-These are the tasks that the application can so far perform. * Parse through an entire Twine story and then extract the relevant data like questions and choice statements. The entire story can then be navigated using Flask. * Generate the phonemes for each choice statement and then loading it into Pocketsphinx.">
+These are the tasks that the application can so far perform. * Parse through an entire Twine story and then extract the relevant data like questions and choice statements. The entire story can then be navigated using Flask.
+ Generate the phonemes for each choice statement and then loading it into Pocketsphinx.">
 
 
 <meta itemprop="dateModified" content="2017-08-29T17:51:40&#43;05:30" />
-<meta itemprop="wordCount" content="304">
+<meta itemprop="wordCount" content="297">
 
 
 
@@ -60,7 +62,8 @@ These are the tasks that the application can so far perform. * Parse through an 
 <meta name="twitter:text:title" content="Final Report"/>
 <meta name="twitter:title" content="Final Report"/>
 <meta name="twitter:description" content="The final work period is done and the application is up and running at https://snd96.pythonanywhere.com/. The github repository for my work can be found here: https://github.com/SND96/twine-stories.
-These are the tasks that the application can so far perform. * Parse through an entire Twine story and then extract the relevant data like questions and choice statements. The entire story can then be navigated using Flask. * Generate the phonemes for each choice statement and then loading it into Pocketsphinx."/>
+These are the tasks that the application can so far perform. * Parse through an entire Twine story and then extract the relevant data like questions and choice statements. The entire story can then be navigated using Flask.
+ Generate the phonemes for each choice statement and then loading it into Pocketsphinx."/>
 
 
   </head>
@@ -109,14 +112,23 @@ These are the tasks that the application can so far perform. * Parse through an 
         <p>The final work period is done and the application is up and running at <a href="https://snd96.pythonanywhere.com/">https://snd96.pythonanywhere.com/</a>. The github repository for my work can be found here: <a href="https://github.com/SND96/twine-stories">https://github.com/SND96/twine-stories</a>.</p>
 
 <p>These are the tasks that the application can so far perform.
-* Parse through an entire Twine story and then extract the relevant data like questions and choice statements. The entire story can then be navigated using Flask.
-* Generate the phonemes for each choice statement and then loading it into <a href="https://github.com/syl22-00/pocketsphinx.js">Pocketsphinx.js</a>.
-* Uses the voice recording UI found in <a href="https://github.com/SND96/pocketsphinx-scores">https://github.com/SND96/pocketsphinx-scores</a>, to record the user&rsquo;s voice. The recording can then be replayed.
-* The recording can also be evaluated to see if it matches any of the choices in the Twine node. If it does, the application automatically navigates to the next node.
-* The application can also perform intelligibility remediation on the phrase &ldquo;we drank tea in the afternoon and watched tv&rdquo;. This node can be reached by clicking on the option &ldquo;Click for more pronunciation evaluation&rdquo; in the starting node of the story. The user can record their saying of the phrase and on pressing evaluate, the intelligibility scores for each word will be displayed.
-* Right now the voice recognition for choosing an option is still buggy and can result in wrong phrases being chosen.
-* Also the server for the intelligibility scores can be slow and doesn&rsquo;t respond for many minutes.
-* Due to a lack of recordings only one phrase is available for intelligibility scoring.</p>
+* Parse through an entire Twine story and then extract the relevant data like questions and choice statements. The entire story can then be navigated using Flask.</p>
+
+<ul>
+<li><p>Generate the phonemes for each choice statement and then loading it into <a href="https://github.com/syl22-00/pocketsphinx.js">Pocketsphinx.js</a>.</p></li>
+
+<li><p>Uses the voice recording UI found in <a href="https://github.com/SND96/pocketsphinx-scores">https://github.com/SND96/pocketsphinx-scores</a>, to record the user&rsquo;s voice. The recording can then be replayed.</p></li>
+
+<li><p>The recording can also be evaluated to see if it matches any of the choices in the Twine node. If it does, the application automatically navigates to the next node.</p></li>
+
+<li><p>The application can also perform intelligibility remediation on the phrase &ldquo;we drank tea in the afternoon and watched tv&rdquo;. This node can be reached by clicking on the option &ldquo;Click for more pronunciation evaluation&rdquo; in the starting node of the story. The user can record their saying of the phrase and on pressing evaluate, the intelligibility scores for each word will be displayed.</p></li>
+
+<li><p>Right now the voice recognition for choosing an option is still buggy and can result in wrong phrases being chosen.</p></li>
+
+<li><p>Also the server for the intelligibility scores can be slow and doesn&rsquo;t respond for many minutes.</p></li>
+
+<li><p>Due to a lack of recordings only one phrase is available for intelligibility scoring.</p></li>
+</ul>
 
 <p>The application as of now is ready to take in a new Twine story and convert it into a voice navigated story. I tried to do as much as I could to get it ready in time. I&rsquo;m happy with what I&rsquo;ve accomplished but still wish I could&rsquo;ve done more. For now, I&rsquo;m done with GSoC 2017 :D</p>
 
