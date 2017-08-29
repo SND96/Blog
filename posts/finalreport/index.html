@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
      
-    <title>Binary Wings  | FinalReport</title>
+    <title>Binary Wings  | Final Report</title>
     <meta name="HandheldFriendly" content="True">
     <meta name="MobileOptimized" content="320">
 
@@ -19,10 +19,9 @@
 
      
 
-      <meta property="og:title" content="FinalReport" />
-<meta property="og:description" content="Computer Aided Learning using Speech Recognition Twine Stories This is the final report for my GSoC 2017 project. The work I&rsquo;ve done will be referenced in this repository. https://github.com/SND96/twine-stories.
-Twine-Stories is a branching part scenario built to help English learners. The live demo to test out the service is at https://snd96.pythonanywhere.com/
-Using Twine The underlying base is Twee. Twee is a software used for educational purposes and to make branching games." />
+      <meta property="og:title" content="Final Report" />
+<meta property="og:description" content="The final work period is done and the application is up and running at https://snd96.pythonanywhere.com/. The github repository for my work can be found here: https://github.com/SND96/twine-stories.
+These are the tasks that the application can so far perform. * Parse through an entire Twine story and then extract the relevant data like questions and choice statements. The entire story can then be navigated using Flask. * Generate the phonemes for each choice statement and then loading it into Pocketsphinx." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://snd96.github.io/Sahith-Blog/posts/finalreport/" />
 
@@ -41,14 +40,13 @@ Using Twine The underlying base is Twee. Twee is a software used for educational
 
 
 
-<meta itemprop="name" content="FinalReport">
-<meta itemprop="description" content="Computer Aided Learning using Speech Recognition Twine Stories This is the final report for my GSoC 2017 project. The work I&rsquo;ve done will be referenced in this repository. https://github.com/SND96/twine-stories.
-Twine-Stories is a branching part scenario built to help English learners. The live demo to test out the service is at https://snd96.pythonanywhere.com/
-Using Twine The underlying base is Twee. Twee is a software used for educational purposes and to make branching games.">
+<meta itemprop="name" content="Final Report">
+<meta itemprop="description" content="The final work period is done and the application is up and running at https://snd96.pythonanywhere.com/. The github repository for my work can be found here: https://github.com/SND96/twine-stories.
+These are the tasks that the application can so far perform. * Parse through an entire Twine story and then extract the relevant data like questions and choice statements. The entire story can then be navigated using Flask. * Generate the phonemes for each choice statement and then loading it into Pocketsphinx.">
 
 
 <meta itemprop="dateModified" content="2017-08-29T17:51:40&#43;05:30" />
-<meta itemprop="wordCount" content="1384">
+<meta itemprop="wordCount" content="304">
 
 
 
@@ -59,11 +57,10 @@ Using Twine The underlying base is Twee. Twee is a software used for educational
 
 
 
-<meta name="twitter:text:title" content="FinalReport"/>
-<meta name="twitter:title" content="FinalReport"/>
-<meta name="twitter:description" content="Computer Aided Learning using Speech Recognition Twine Stories This is the final report for my GSoC 2017 project. The work I&rsquo;ve done will be referenced in this repository. https://github.com/SND96/twine-stories.
-Twine-Stories is a branching part scenario built to help English learners. The live demo to test out the service is at https://snd96.pythonanywhere.com/
-Using Twine The underlying base is Twee. Twee is a software used for educational purposes and to make branching games."/>
+<meta name="twitter:text:title" content="Final Report"/>
+<meta name="twitter:title" content="Final Report"/>
+<meta name="twitter:description" content="The final work period is done and the application is up and running at https://snd96.pythonanywhere.com/. The github repository for my work can be found here: https://github.com/SND96/twine-stories.
+These are the tasks that the application can so far perform. * Parse through an entire Twine story and then extract the relevant data like questions and choice statements. The entire story can then be navigated using Flask. * Generate the phonemes for each choice statement and then loading it into Pocketsphinx."/>
 
 
   </head>
@@ -105,162 +102,23 @@ Using Twine The underlying base is Twee. Twee is a software used for educational
           POSTS
         </p>
         <h1 class="f1">
-          FinalReport
+          Final Report
         </h1>
       </header>
       <div class="nested-copy-line-height lh-copy f4 nested-links nested-img mid-gray">
-        
+        <p>The final work period is done and the application is up and running at <a href="https://snd96.pythonanywhere.com/">https://snd96.pythonanywhere.com/</a>. The github repository for my work can be found here: <a href="https://github.com/SND96/twine-stories">https://github.com/SND96/twine-stories</a>.</p>
 
-<h1 id="computer-aided-learning-using-speech-recognition">Computer Aided Learning using Speech Recognition</h1>
+<p>These are the tasks that the application can so far perform.
+* Parse through an entire Twine story and then extract the relevant data like questions and choice statements. The entire story can then be navigated using Flask.
+* Generate the phonemes for each choice statement and then loading it into <a href="https://github.com/syl22-00/pocketsphinx.js">Pocketsphinx.js</a>.
+* Uses the voice recording UI found in <a href="https://github.com/SND96/pocketsphinx-scores">https://github.com/SND96/pocketsphinx-scores</a>, to record the user&rsquo;s voice. The recording can then be replayed.
+* The recording can also be evaluated to see if it matches any of the choices in the Twine node. If it does, the application automatically navigates to the next node.
+* The application can also perform intelligibility remediation on the phrase &ldquo;we drank tea in the afternoon and watched tv&rdquo;. This node can be reached by clicking on the option &ldquo;Click for more pronunciation evaluation&rdquo; in the starting node of the story. The user can record their saying of the phrase and on pressing evaluate, the intelligibility scores for each word will be displayed.
+* Right now the voice recognition for choosing an option is still buggy and can result in wrong phrases being chosen.
+* Also the server for the intelligibility scores can be slow and doesn&rsquo;t respond for many minutes.
+* Due to a lack of recordings only one phrase is available for intelligibility scoring.</p>
 
-<h3 id="twine-stories">Twine Stories</h3>
-
-<p>This is the final report for my GSoC 2017 project. The work I&rsquo;ve done will be referenced in this repository. <a href="https://github.com/SND96/twine-stories">https://github.com/SND96/twine-stories</a>.</p>
-
-<p>Twine-Stories is a branching part scenario built to help English learners. The live demo to test out the service is at <a href="https://snd96.pythonanywhere.com/">https://snd96.pythonanywhere.com/</a></p>
-
-<h3 id="using-twine">Using Twine</h3>
-
-<p>The underlying base is Twee. Twee is a software used for educational purposes and to make branching games. The flexibility of Twine allows integration of HTML, CSS and JavaScript easily into the stories. This will allow the integration of the voice recorder and feedback systems directly into the story. This software is used to make tutorials based on the Accuracy Reviewal of Wikipedia using Flask. These tutorials were then converted into twee files which are basically text files which can now be used for parsing.</p>
-
-<h3 id="flask">Flask</h3>
-
-<p>Python Flask is used as the backbone for routing between different pages because it is simple to use and also reasonably fast. A single HTML page is as the main template is more or less the same for all the different twine nodes. The differences between each page will be loaded by passing the required strings to the html file using flask&rsquo;s render_template function.</p>
-
-<h3 id="speech-processing-using-pocketsphinx-js">Speech Processing using Pocketsphinx.js</h3>
-
-<p>Right now not all the recordings for each phrase is available so I&rsquo;m making a prototype and leaving those fields empty so that they can be filled at a later date when enough data is present. Pocketsphinx.js will be used as the speech recognizer as used in <a href="https://cmusphinx.github.io/wiki/pocketsphinx_pronunciation_evaluation">https://cmusphinx.github.io/wiki/pocketsphinx_pronunciation_evaluation/</a> . This allows generally accurate recordings while in the web browser which will help in making a more robust online course for speech remediation in the future. The phrases that are being looked for in the current page are loaded into the Pocketsphinx.js recognizer. The format will be like this :</p>
-
-<pre><code class="language-javascript">var wordList = [[&quot;change&quot;, &quot;CH EY N JH&quot;], [&quot;the&quot;, &quot;DH AH&quot;], [&quot;word&quot;, &quot;W ER D&quot;], [&quot;recently&quot;, &quot;R IY S AH N T L IY&quot;], [&quot;to&quot;, &quot;T UW&quot;], [&quot;reference&quot;, &quot;R EH F ER AH N S&quot;], [&quot;date&quot;, &quot;D EY T&quot;], [&quot;of&quot;, &quot;AH V&quot;], [&quot;event&quot;, &quot;IH V EH N T&quot;], [&quot;delete&quot;, &quot;D IH L IY T&quot;], [&quot;and&quot;, &quot;AH N D&quot;], [&quot;leave&quot;, &quot;L IY V&quot;], [&quot;rest&quot;, &quot;R EH S T&quot;], [&quot;as&quot;, &quot;AE Z&quot;], [&quot;it&quot;, &quot;IH T&quot;], [&quot;is&quot;, &quot;IH Z&quot;], [&quot;click&quot;, &quot;K L IH K&quot;], [&quot;for&quot;, &quot;F AO R&quot;], [&quot;more&quot;, &quot;M AO R&quot;], [&quot;pronunciation&quot;, &quot;P R OW N AH N S IY EY SH AH N&quot;], [&quot;evaluation&quot;, &quot;IH V AE L Y UW EY SH AH N&quot;],];
-
-var grammarChoices = {numStates: 15, start: 0, end: 14, transitions: [{from: 0, to:1, word:&quot;change&quot;},{from: 1, to:2, word:&quot;the&quot;},{from: 2, to:3, word:&quot;word&quot;},{from: 3, to:4, word:&quot;recently&quot;},{from: 4, to:5, word:&quot;to&quot;},{from: 5, to:6, word:&quot;reference&quot;},{from: 6, to:7, word:&quot;the&quot;},{from: 7, to:8, word:&quot;date&quot;},{from: 8, to:9, word:&quot;of&quot;},{from: 9, to:10, word:&quot;the&quot;},{from: 10, to:11, word:&quot;event&quot;},{from: 0, to:1, word:&quot;delete&quot;},{from: 1, to:2, word:&quot;the&quot;},{from: 2, to:3, word:&quot;word&quot;},{from: 3, to:4, word:&quot;recently&quot;},{from: 4, to:5, word:&quot;and&quot;},{from: 5, to:6, word:&quot;leave&quot;},{from: 6, to:7, word:&quot;the&quot;},{from: 7, to:8, word:&quot;rest&quot;},{from: 8, to:9, word:&quot;as&quot;},{from: 9, to:10, word:&quot;it&quot;},{from: 10, to:11, word:&quot;is&quot;},{from: 0, to:1, word:&quot;click&quot;},{from: 1, to:2, word:&quot;for&quot;},{from: 2, to:3, word:&quot;more&quot;},{from: 3, to:4, word:&quot;pronunciation&quot;},{from: 4, to:5, word:&quot;evaluation&quot;}]};
-</code></pre>
-
-<p>wordList will contain all the words which will be used in the recognizer like a dictionary of sorts. grammarChoices states the transition states for each word so that each the recognizer knows the order in which the words need to be recognized. For multiple choice phrases, there will be more than one word in each transition.</p>
-
-<h3 id="parsing-the-twee-files">Parsing the Twee files</h3>
-
-<p>After the twine story has been made and converted into a file which can be read by Python, there are two parser files that will be used to extract the appropriate words and phrase pronunciations from the files. The two files are parser.py and transitions.py, with the former being used to extract the questions and choices while transitions.py finds the approriate phonemes for each phrases using the cmusphinx.en.dict dictionary.</p>
-
-<h3 id="transitions-py">Transitions.py</h3>
-
-<p>The main part about the program is a function that compiles the entire phoneme dictionary which can then be used to obtain the phonemes for a word when it is passed to the function.</p>
-
-<pre><code class="language-python">regexp = compile(r'\(.*\)')
-CMUDICT = {}
-
-def read_dict():
-    with open('cmudict-en-us.dict',
-              'r') as f:
-        for line in f.readlines():
-            dictline = line.strip().split()
-            pronunciation = ' '.join(dictline[1:]).lower()
-            if '(' in dictline[0]:
-                headword = regexp.sub('', dictline[0], 1).lower()
-            else:
-                headword = dictline[0].lower()
-            if headword in CMUDICT:
-                CMUDICT[headword].append(pronunciation)
-            else:
-                CMUDICT[headword] = [pronunciation]
-
-read_dict()
-
-punct = compile(r'[,.?!]')
-</code></pre>
-
-<p>For example, if we send &lsquo;change&rsquo;, the returned phonemes would be CH EY N JH.</p>
-
-<h3 id="parser-py">Parser.py</h3>
-
-<p>The reading of the the AROWF tutorials and then extracting and sending the phrases is done using this program. Initially this program was also used to generate the entire html page from scratch based on which node the user was in currently but has been since replaced to just send the phrases to the main flask program.
-The converted twine story has a unique format like</p>
-
-<pre><code>:: StoryTitle
-AROWF 2
-
-:: UserScript[script]
-
-
-:: UserStylesheet[stylesheet]
-
-:: Start
-**You visit https://tools.wmflabs.org/arowf/answer to check on some
-article to review.
-This is what you see,**
-
-[[**Change the word &quot;recently&quot; to reference the date of the event.** -&gt;Step 1]]
-
-[[ **Delete the word &quot;recently&quot; and leave the rest as it is.** -&gt;End1]]
-
-[[ **Click for more pronunciation evaluation.** -&gt;PronEval]]
-
-:: Step 1
-When trying to find the correct date, what will you do?
-
-[[ **Use my memory of the event for the date it occurred.** -&gt;End 2]]
-
-[[ **Go through my old newspapers to find the particular event.**-&gt;End 3]]
-
-[[ **Search for an online source that refers to the particular event. **-&gt;Step 2]]
-
-:: End1
-It's better to do a more detailed edit of the article.
-
-[[**Go back..** -&gt;Start]]
-
-...
-</code></pre>
-
-<p>To extract the appropriate phrases the below function is used. The node the user is currently in is passed to the function and then the required options and phrases are returned.</p>
-
-<pre><code class="language-Python">          for i in range (length):
-              if (line[i] == '.'):
-                  nodes = i
-                  break
-              if line[i].isalpha():
-                  alpha = 1
-              if (alpha):
-                  ccline[num_line] += line[i]
-          for i in range (nodes,length):
-              if(line[i] == ']'):
-                  break
-              if(initial == 2):
-                  next_node[num_line] += line[i]
-              if(initial==1 and line[i].isspace()==0):
-                  next_node[num_line] += line[i]
-                  initial = 2
-              if(line[i] == '&gt;'):
-                  initial = 1
-          num_line += 1            
-      return(next_node, num_line, statement, ccline)
-</code></pre>
-
-<h3 id="node-navigation">Node Navigation</h3>
-
-<p>The nodes that the user will see will be like this:</p>
-
-<p><img src="Example_page.png" alt="alt text" title="Start Page" /></p>
-
-<p>The first statement is the question that will be posed to the user. The user will then have to select one of the next 3 options to go to the next node. There are two ways that this can be done. The first one is to simply click on the &lsquo;Go&rsquo;
-button. The second way is to record their choice and then feed it to the Pocketsphinx.js recognizer. This can be done by pressing the record button, saying their choice and pressing the record button once again. The user can replay his voice once more to hear how he sounded. When he feels that his speech is clear enough, he can press the evaluate button which will then feed the recording to the recognizer which will return the recognized phrase. If the recognized phrase matches any of the options that are present on the page, then the button is automatically pressed, taking the user to the next page. Else the user can click record and try once more.</p>
-
-<p>On a button press, a POST request is sent to the main Flask program which then generates the next file.</p>
-
-<pre><code class="language-html">&lt;form action=&quot;https://snd96.pythonanywhere.com/next&quot;  method = &quot;POST&quot;&gt;
-                   &lt;p&gt;{{option1}}
-                    &lt;button name=&quot;option&quot; id=&quot;option1&quot; type = &quot;submit&quot;  value=&quot;{{next1}}&quot;&gt;Go&lt;/button&gt;
-                       &lt;p&gt;{{option2}}
-                    &lt;button name=&quot;option&quot; id=&quot;option2&quot; type = &quot;submit&quot;  value=&quot;{{next2}}&quot;&gt;Go&lt;/button&gt;
-                       &lt;p&gt;{{option3}}
-                    &lt;button name=&quot;option&quot; id=&quot;option3&quot; type = &quot;submit&quot;  value=&quot;{{next3}}&quot;&gt;Go&lt;/button&gt;
-
-            &lt;/form&gt;
-</code></pre>
-
-<h3 id="intelligibility-remediation">Intelligibility Remediation</h3>
-
-<p>This step requires recording of each of the phrases which has not been finished yet so it is incomplete. The one phrase for which adequate recordings has been obtained is &lsquo;we drank tea in the afternoon and watched tv&rsquo;. So to specifically show the intelligibility remediation using this phrase a separate node is used which is accessed by clicking on the option &lsquo;Click for more pronunciation evaluation&rsquo; in the starting page. In this page, the user can either go back to the previous page or record the phrase. However, on pressing evaluate in this page, the user&rsquo;s recording has more speech processing done on it so that the intelligibility score can be obtained. This intelligibility score is based on the word done in <a href="https://github.com/brijmohan/iremedy">https://github.com/brijmohan/iremedy</a>.</p>
+<p>The application as of now is ready to take in a new Twine story and convert it into a voice navigated story. I tried to do as much as I could to get it ready in time. I&rsquo;m happy with what I&rsquo;ve accomplished but still wish I could&rsquo;ve done more. For now, I&rsquo;m done with GSoC 2017 :D</p>
 
       </div>
     </article>
@@ -282,7 +140,7 @@ button. The second way is to record their choice and then feed it to the Pockets
         <li class="list f5 w-100 hover-bg-white nl1">
           
           <a href="/Sahith-Blog/posts/finalreport/" class="link ph2 pv2 db black o-50">
-            FinalReport
+            Final Report
           </a>
         </li>
       

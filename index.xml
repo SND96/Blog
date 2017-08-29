@@ -12,14 +12,13 @@
     
     
     <item>
-      <title>FinalReport</title>
+      <title>Final Report</title>
       <link>https://snd96.github.io/Sahith-Blog/posts/finalreport/</link>
       <pubDate>Tue, 29 Aug 2017 17:51:40 +0530</pubDate>
       
       <guid>https://snd96.github.io/Sahith-Blog/posts/finalreport/</guid>
-      <description>Computer Aided Learning using Speech Recognition Twine Stories This is the final report for my GSoC 2017 project. The work I&amp;rsquo;ve done will be referenced in this repository. https://github.com/SND96/twine-stories.
-Twine-Stories is a branching part scenario built to help English learners. The live demo to test out the service is at https://snd96.pythonanywhere.com/
-Using Twine The underlying base is Twee. Twee is a software used for educational purposes and to make branching games.</description>
+      <description>The final work period is done and the application is up and running at https://snd96.pythonanywhere.com/. The github repository for my work can be found here: https://github.com/SND96/twine-stories.
+These are the tasks that the application can so far perform. * Parse through an entire Twine story and then extract the relevant data like questions and choice statements. The entire story can then be navigated using Flask. * Generate the phonemes for each choice statement and then loading it into Pocketsphinx.</description>
     </item>
     
     <item>
