@@ -18,7 +18,8 @@
       
       <guid>https://snd96.github.io/Sahith-Blog/posts/finalreport/</guid>
       <description>The final work period is done and the application is up and running at https://snd96.pythonanywhere.com/. The github repository for my work can be found here: https://github.com/SND96/twine-stories.
-These are the tasks that the application can so far perform. * Parse through an entire Twine story and then extract the relevant data like questions and choice statements. The entire story can then be navigated using Flask.
+These are the tasks that the application can so far perform.
+ Parse through an entire Twine story and then extract the relevant data like questions and choice statements. The entire story can then be navigated using Flask.
  Generate the phonemes for each choice statement and then loading it into Pocketsphinx.</description>
     </item>
     
