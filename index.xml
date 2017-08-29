@@ -6,10 +6,21 @@
     <description>Recent content on Binary Wings</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 03 Aug 2017 13:53:30 +0530</lastBuildDate>
+    <lastBuildDate>Tue, 29 Aug 2017 17:51:40 +0530</lastBuildDate>
     
 	<atom:link href="https://snd96.github.io/Sahith-Blog/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>FinalReport</title>
+      <link>https://snd96.github.io/Sahith-Blog/posts/finalreport/</link>
+      <pubDate>Tue, 29 Aug 2017 17:51:40 +0530</pubDate>
+      
+      <guid>https://snd96.github.io/Sahith-Blog/posts/finalreport/</guid>
+      <description>Computer Aided Learning using Speech Recognition Twine Stories This is the final report for my GSoC 2017 project. The work I&amp;rsquo;ve done will be referenced in this repository. https://github.com/SND96/twine-stories.
+Twine-Stories is a branching part scenario built to help English learners. The live demo to test out the service is at https://snd96.pythonanywhere.com/
+Using Twine The underlying base is Twee. Twee is a software used for educational purposes and to make branching games.</description>
+    </item>
     
     <item>
       <title>Navigation through Twine with Voice - Week 9/10</title>
